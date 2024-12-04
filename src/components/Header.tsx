@@ -20,9 +20,9 @@ const Header = () => {
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
             <Linkedin size={20} />
           </a>
-          <button className="md:hidden">
+          {/* <button className="md:hidden">
             <Menu size={24} />
-          </button>
+          </button> */}
         </div>
       </div>
     </header>

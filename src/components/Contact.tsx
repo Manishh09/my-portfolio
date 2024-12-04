@@ -76,7 +76,7 @@ const Contact = () => {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <Mail className="w-6 h-6 text-blue-600 mr-4" />
-                <span>manish.boge@example.com</span>
+                <span>manishboge@gmail.com</span>
               </motion.div>
               <motion.div
                 className="flex items-center"
@@ -84,7 +84,7 @@ const Contact = () => {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <Phone className="w-6 h-6 text-blue-600 mr-4" />
-                <span>+91 (XXX) XXX-XXXX</span>
+                <span>+91 (789) 318-2353</span>
               </motion.div>
               <motion.div
                 className="flex items-center"
@@ -92,7 +92,7 @@ const Contact = () => {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <MapPin className="w-6 h-6 text-blue-600 mr-4" />
-                <span>India</span>
+                <span>Hyderabad - India</span>
               </motion.div>
             </div>
           </motion.div>

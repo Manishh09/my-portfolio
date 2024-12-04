@@ -1,17 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Server, Palette, Brain } from 'lucide-react';
+import { Code, Server, Palette, Brain, FlaskConical, Workflow } from 'lucide-react';
 
 const skills = [
   {
     icon: <Code className="w-8 h-8 text-blue-600" />,
     title: 'Frontend Development',
-    description: 'Angular, TypeScript, RxJS, Material UI',
+    description: 'Angular, TypeScript, RxJS, Angular Material',
   },
   {
     icon: <Server className="w-8 h-8 text-blue-600" />,
     title: 'Backend Integration',
-    description: 'RESTful APIs, GraphQL, WebSockets',
+    description: 'RESTful APIs, Golang .NET Core WebAPI',
   },
   {
     icon: <Palette className="w-8 h-8 text-blue-600" />,
@@ -19,9 +19,19 @@ const skills = [
     description: 'Responsive Design, CSS3, SCSS',
   },
   {
+    icon: <FlaskConical className="w-8 h-8 text-blue-600" />,
+    title: 'Testing',
+    description: 'Jasmine, Karma',
+  },
+  {
+    icon: <Workflow className="w-8 h-8 text-blue-600" />,
+    title: 'Automation',
+    description: 'Cypress',
+  },
+  {
     icon: <Brain className="w-8 h-8 text-blue-600" />,
     title: 'Problem Solving',
-    description: 'Algorithms, Performance Optimization',
+    description: 'Performance Optimization',
   },
 ];
 
@@ -109,7 +119,7 @@ const About = () => {
               whileInView="show"
               viewport={{ once: true }}
             >
-              {['50+ Projects Delivered', '4+ Years Experience'].map((text, index) => (
+              {['10+ Projects Delivered', '5+ Years Experience'].map((text, index) => (
                 <motion.div
                   key={index}
                   className="bg-blue-50 px-4 py-2 rounded-full"

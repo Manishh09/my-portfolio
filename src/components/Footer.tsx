@@ -7,12 +7,12 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0">
-            <h3 className="text-2xl font-bold mb-2">John Doe</h3>
-            <p className="text-gray-400">Full Stack Developer</p>
+            <h3 className="text-2xl font-bold mb-2">Manish Boge</h3>
+            <p className="text-gray-400">Angular Developer</p>
           </div>
           <div className="flex space-x-6">
             <a
-              href="https://github.com"
+              href="https://github.com/Manishh09"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-400 transition-colors"
@@ -20,7 +20,7 @@ const Footer = () => {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/manish-boge-97b024129/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-400 transition-colors"
@@ -28,7 +28,7 @@ const Footer = () => {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:john.doe@example.com"
+              href="mailto:manishboge@gmail.com"
               className="hover:text-blue-400 transition-colors"
             >
               <Mail size={24} />
@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} John Doe. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Manish Boge. All rights reserved.</p>
         </div>
       </div>
     </footer>

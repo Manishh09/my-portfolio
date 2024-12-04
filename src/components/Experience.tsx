@@ -62,7 +62,7 @@ const Experience = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <div className="w-1/2 pr-8 pl-4">
+                <div className="w-1/2 pr-8 pl-8">
                   <motion.div
                     className={`bg-white p-6 rounded-lg shadow-lg ${
                       index % 2 === 0 ? 'text-right' : 'text-left'
@@ -90,7 +90,9 @@ const Experience = () => {
                   </motion.div>
                 </div>
                 <motion.div
-                  className="w-4 h-4 bg-blue-600 rounded-full absolute left-1/2 transform -translate-x-1/2 z-10"
+                  className={`w-4 h-4 bg-blue-600 rounded-full absolute ${
+                    index % 2 === 0 ? 'right-1/2' : 'left-1/2'
+                  } transform -translate-x-1/2 z-10 `}
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
                   viewport={{ once: true }}

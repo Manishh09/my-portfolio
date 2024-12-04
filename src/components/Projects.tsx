@@ -20,14 +20,14 @@ const projects: Project[] = [
     title: '3D Model Simulation',
     description: 'Interactive 3D simulation platform for machine visualization and analysis',
     image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800',
-    technologies: ['Angular', 'Three.js', 'WebGL', 'TypeScript'],
+    technologies: ['Angular', 'Three.js', 'Golang', 'TypeScript'],
     github: 'https://github.com',
     live: 'https://example.com',
     features: [
       '3D model rendering with interactive controls',
       'Real-time simulation of machine operations',
       'Performance optimization for complex 3D scenes',
-      'Cross-browser compatibility'
+      
     ]
   },
   {
@@ -35,14 +35,14 @@ const projects: Project[] = [
     title: 'Data on Cloud',
     description: 'Cloud migration platform for transforming on-premises data infrastructure',
     image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800',
-    technologies: ['Angular', 'AWS', 'Node.js', 'MongoDB'],
+    technologies: ['Angular','.NET Core', 'MsSQL'],
     github: 'https://github.com',
     live: 'https://example.com',
     features: [
       'Automated data migration workflows',
       'Real-time progress monitoring',
       'Data validation and verification',
-      'Scalable cloud infrastructure'
+      'Cost estimation and optimization'
     ]
   },
   {
@@ -50,13 +50,12 @@ const projects: Project[] = [
     title: 'MME',
     description: 'Mainframe assessment and analysis platform for enterprise applications',
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800',
-    technologies: ['Angular', 'Java', 'Spring Boot', 'PostgreSQL'],
+    technologies: ['Angular', '.NET Core', 'MsSQL'],
     github: 'https://github.com',
     live: 'https://example.com',
     features: [
       'Automated mainframe code analysis',
-      'Dependency mapping and visualization',
-      'Migration recommendation engine',
+      'Migration recommendations and strategies',
       'Performance metrics dashboard'
     ]
   }
