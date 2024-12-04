@@ -1,5 +1,6 @@
-import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+// Desc: Footer component for the website. It contains the social media links and the copywrite information.
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { SiGmail } from 'react-icons/si';
 
 const Footer = () => {
   return (
@@ -17,7 +18,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="hover:text-blue-400 transition-colors"
             >
-              <Github size={24} />
+              <FaGithub size={24} />
             </a>
             <a
               href="https://www.linkedin.com/in/manish-boge-97b024129/"
@@ -25,13 +26,13 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="hover:text-blue-400 transition-colors"
             >
-              <Linkedin size={24} />
+              <FaLinkedin size={24} />
             </a>
             <a
               href="mailto:manishboge@gmail.com"
               className="hover:text-blue-400 transition-colors"
             >
-              <Mail size={24} />
+              <SiGmail size={24} />
             </a>
           </div>
         </div>

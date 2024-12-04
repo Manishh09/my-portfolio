@@ -1,3 +1,4 @@
+// Desc: Main component of the application  which contains App component.
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.tsx';

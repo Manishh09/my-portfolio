@@ -1,4 +1,4 @@
-import React from 'react';
+// Desc: Main component of the application which contains all the other components.
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';

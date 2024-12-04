@@ -1,3 +1,4 @@
+// Desc: This file contains the Contact component that displays the contact form and contact information.
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Loader2 } from 'lucide-react';

@@ -1,4 +1,4 @@
-import React from 'react';
+// Desc: Certifications component to display the certifications with icons and providers.
 import { motion } from 'framer-motion';
 import { SiAngular } from "react-icons/si";
 import { FaGolang } from "react-icons/fa6";

@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+// Desc: Component to display featured projects with modal for more details and links. 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Github, ExternalLink } from 'lucide-react';
 import ProjectModal from './ProjectModal';

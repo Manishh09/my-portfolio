@@ -84,7 +84,7 @@ const About = () => {
           >
             <h3 className="text-2xl font-semibold mb-4">Who I Am</h3>
             <p className="text-gray-600 mb-6">
-              I'm a dedicated Angular Developer with over 4 years of experience in building
+              I'm a dedicated Angular Developer with over 6 years of experience in building
               enterprise-level web applications. I specialize in creating efficient, scalable,
               and maintainable solutions using modern Angular practices and patterns.
             </p>
@@ -119,7 +119,7 @@ const About = () => {
               whileInView="show"
               viewport={{ once: true }}
             >
-              {['10+ Projects Delivered', '5+ Years Experience'].map((text, index) => (
+              {['5+ Projects Delivered', '6 Years Experience'].map((text, index) => (
                 <motion.div
                   key={index}
                   className="bg-blue-50 px-4 py-2 rounded-full"
