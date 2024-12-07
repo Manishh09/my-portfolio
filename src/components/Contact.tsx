@@ -51,7 +51,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20">
       <Toaster position="top-right" />
       <div className="max-w-6xl mx-auto px-4">
         <motion.h2
@@ -62,7 +62,7 @@ const Contact = () => {
         >
           Get In Touch
         </motion.h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}

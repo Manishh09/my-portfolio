@@ -1,39 +1,7 @@
-import React from 'react';
+// Code for the About section
 import { motion } from 'framer-motion';
-import { Code, Server, Palette, Brain, FlaskConical, Workflow } from 'lucide-react';
-
-const skills = [
-  {
-    icon: <Code className="w-8 h-8 text-blue-600" />,
-    title: 'Frontend Development',
-    description: 'Angular, TypeScript, RxJS, Angular Material',
-  },
-  {
-    icon: <Server className="w-8 h-8 text-blue-600" />,
-    title: 'Backend Integration',
-    description: 'RESTful APIs, Golang .NET Core WebAPI',
-  },
-  {
-    icon: <Palette className="w-8 h-8 text-blue-600" />,
-    title: 'UI/UX Design',
-    description: 'Responsive Design, CSS3, SCSS',
-  },
-  {
-    icon: <FlaskConical className="w-8 h-8 text-blue-600" />,
-    title: 'Testing',
-    description: 'Jasmine, Karma',
-  },
-  {
-    icon: <Workflow className="w-8 h-8 text-blue-600" />,
-    title: 'Automation',
-    description: 'Cypress',
-  },
-  {
-    icon: <Brain className="w-8 h-8 text-blue-600" />,
-    title: 'Problem Solving',
-    description: 'Performance Optimization',
-  },
-];
+ 
+ 
 
 const education = [
   {
@@ -68,7 +36,7 @@ const About = () => {
     <section id="about" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <motion.h2
-          className="text-3xl font-bold text-center mb-12"
+          className="text-3xl font-bold   mb-12"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -148,15 +116,16 @@ const About = () => {
           </motion.div>
         </div>
         
-        <motion.h3
+        {/* <motion.h3
           className="text-2xl font-semibold text-center mb-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
           Technical Skills
-        </motion.h3>
-        <motion.div
+        </motion.h3> */}
+        
+        {/* <motion.div
           className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
           variants={container}
           initial="hidden"
@@ -182,7 +151,7 @@ const About = () => {
               <p className="text-gray-600">{skill.description}</p>
             </motion.div>
           ))}
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

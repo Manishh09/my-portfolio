@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, MapPin } from 'lucide-react';
 
@@ -39,7 +38,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 bg-white">
+    <section id="experience" className="py-20">
       <div className="max-w-6xl mx-auto px-4">
         <motion.h2
           className="text-3xl font-bold text-center mb-12"
