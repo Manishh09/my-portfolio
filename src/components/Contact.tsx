@@ -1,3 +1,4 @@
+// Desc: This file contains the Contact component that displays the contact form and contact information.
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Loader2 } from 'lucide-react';
@@ -50,7 +51,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20">
       <Toaster position="top-right" />
       <div className="max-w-6xl mx-auto px-4">
         <motion.h2
@@ -61,7 +62,7 @@ const Contact = () => {
         >
           Get In Touch
         </motion.h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -76,7 +77,7 @@ const Contact = () => {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <Mail className="w-6 h-6 text-blue-600 mr-4" />
-                <span>manish.boge@example.com</span>
+                <span>manishboge@gmail.com</span>
               </motion.div>
               <motion.div
                 className="flex items-center"
@@ -84,7 +85,7 @@ const Contact = () => {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <Phone className="w-6 h-6 text-blue-600 mr-4" />
-                <span>+91 (XXX) XXX-XXXX</span>
+                <span>+91 (789) 318-2353</span>
               </motion.div>
               <motion.div
                 className="flex items-center"
@@ -92,7 +93,7 @@ const Contact = () => {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <MapPin className="w-6 h-6 text-blue-600 mr-4" />
-                <span>India</span>
+                <span>Hyderabad - India</span>
               </motion.div>
             </div>
           </motion.div>

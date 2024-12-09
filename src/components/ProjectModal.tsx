@@ -1,3 +1,4 @@
+// Desc: Modal component to display project details with links and features. 
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';

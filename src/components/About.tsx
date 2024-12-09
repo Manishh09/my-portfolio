@@ -1,29 +1,7 @@
-import React from 'react';
+// Code for the About section
 import { motion } from 'framer-motion';
-import { Code, Server, Palette, Brain } from 'lucide-react';
-
-const skills = [
-  {
-    icon: <Code className="w-8 h-8 text-blue-600" />,
-    title: 'Frontend Development',
-    description: 'Angular, TypeScript, RxJS, Material UI',
-  },
-  {
-    icon: <Server className="w-8 h-8 text-blue-600" />,
-    title: 'Backend Integration',
-    description: 'RESTful APIs, GraphQL, WebSockets',
-  },
-  {
-    icon: <Palette className="w-8 h-8 text-blue-600" />,
-    title: 'UI/UX Design',
-    description: 'Responsive Design, CSS3, SCSS',
-  },
-  {
-    icon: <Brain className="w-8 h-8 text-blue-600" />,
-    title: 'Problem Solving',
-    description: 'Algorithms, Performance Optimization',
-  },
-];
+ 
+ 
 
 const education = [
   {
@@ -58,7 +36,7 @@ const About = () => {
     <section id="about" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <motion.h2
-          className="text-3xl font-bold text-center mb-12"
+          className="text-3xl font-bold   mb-12"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -74,7 +52,7 @@ const About = () => {
           >
             <h3 className="text-2xl font-semibold mb-4">Who I Am</h3>
             <p className="text-gray-600 mb-6">
-              I'm a dedicated Angular Developer with over 4 years of experience in building
+              I'm a dedicated Angular Developer with over 6 years of experience in building
               enterprise-level web applications. I specialize in creating efficient, scalable,
               and maintainable solutions using modern Angular practices and patterns.
             </p>
@@ -109,7 +87,7 @@ const About = () => {
               whileInView="show"
               viewport={{ once: true }}
             >
-              {['50+ Projects Delivered', '4+ Years Experience'].map((text, index) => (
+              {['5+ Projects Delivered', '6 Years Experience'].map((text, index) => (
                 <motion.div
                   key={index}
                   className="bg-blue-50 px-4 py-2 rounded-full"
@@ -138,15 +116,16 @@ const About = () => {
           </motion.div>
         </div>
         
-        <motion.h3
+        {/* <motion.h3
           className="text-2xl font-semibold text-center mb-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
           Technical Skills
-        </motion.h3>
-        <motion.div
+        </motion.h3> */}
+        
+        {/* <motion.div
           className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
           variants={container}
           initial="hidden"
@@ -172,7 +151,7 @@ const About = () => {
               <p className="text-gray-600">{skill.description}</p>
             </motion.div>
           ))}
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

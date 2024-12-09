@@ -1,4 +1,4 @@
-import React from 'react';
+// Desc: Hero component for the website. It contains the hero section with the profile image and the introduction.
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 

@@ -1,5 +1,6 @@
-import React from 'react';
-import { Menu, Github, Linkedin, Mail } from 'lucide-react';
+// Desc: Header component for the website. It contains the navigation links and the social media links.
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+ 
 
 const Header = () => {
   return (
@@ -15,14 +16,14 @@ const Header = () => {
         </nav>
         <div className="flex items-center space-x-4">
           <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
-            <Github size={20} />
+            <FaGithub size={20} />
           </a>
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
-            <Linkedin size={20} />
+            <FaLinkedin   size={20} />
           </a>
-          <button className="md:hidden">
+          {/* <button className="md:hidden">
             <Menu size={24} />
-          </button>
+          </button> */}
         </div>
       </div>
     </header>
