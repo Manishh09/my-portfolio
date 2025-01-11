@@ -54,7 +54,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-20 px-4">
       <Toaster position="top-right" />
       <div className="max-w-6xl mx-auto px-4">
         <div className="mb-16">
@@ -118,7 +118,7 @@ const Contact = () => {
                 <FaGithub className="w-6 h-6 text-blue-600" />
               </div>
               <h4 className="font-semibold">GitHub</h4>
-              <p className="text-gray-600 text-sm">Manish</p>
+              <p className="text-gray-600 text-sm">Manishh09</p>
             </motion.a>
 
             {/* Mobile */}

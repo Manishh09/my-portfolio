@@ -66,10 +66,10 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
-    <section id="projects" className="py-12 sm:py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="projects" className="py-12 px-4 sm:py-20 bg-gray-50 ">
+      <div className="max-w-6xl mx-auto sm:px-2 lg:px-4">
         <motion.h2
-          className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12"
+          className="text-2xl sm:text-3xl font-bold  mb-8 sm:mb-12"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

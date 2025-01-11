@@ -41,7 +41,7 @@ const Experience = () => {
     <section id="experience" className="py-12 sm:py-16 md:py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <motion.h2
-          className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12"
+          className="text-2xl sm:text-3xl font-bold  mb-8 sm:mb-12"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
