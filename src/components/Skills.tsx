@@ -58,10 +58,10 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="mx-auto py-20  bg-white">
-      <div className="mx-auto px-14">
+    <section id="skills" className="mx-auto py-12 sm:py-16 md:py-20 bg-white">
+      <div className="mx-auto px-4 sm:px-6 lg:px-14 max-w-7xl">
         <motion.h2
-          className="text-4xl font-bold text-center mb-12"
+          className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -69,7 +69,7 @@ const Skills = () => {
           Technical Skills
         </motion.h2>
         <motion.div
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8"
           variants={container}
           initial="hidden"
           whileInView="show"
@@ -78,20 +78,20 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <motion.div
               key={index}
-              className="p-6 bg-gray-50 rounded-lg hover:shadow-md transition-shadow"
+              className="p-4 sm:p-6 bg-gray-50 rounded-lg hover:shadow-md transition-shadow"
               variants={item}
-              whileHover={{ scale: 1.05, y: -5 }}
+              whileHover={{ scale: 1.02, y: -3 }}
             >
               <motion.div
-                className="mb-4"
+                className="mb-3 sm:mb-4"
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 0.2 * index }}
               >
                 {skill.icon}
               </motion.div>
-              <h4 className="text-xl font-semibold mb-2">{skill.title}</h4>
-              <p className="text-gray-600">{skill.description}</p>
+              <h4 className="text-lg sm:text-xl font-semibold mb-2">{skill.title}</h4>
+              <p className="text-sm sm:text-base text-gray-600">{skill.description}</p>
             </motion.div>
           ))}
         </motion.div>

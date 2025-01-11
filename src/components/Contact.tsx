@@ -1,9 +1,12 @@
 // Desc: This file contains the Contact component that displays the contact form and contact information.
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Loader2 } from 'lucide-react';
+import { FaLinkedin, FaGithub, FaMobile } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+import { Loader2 } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
+import { FaLocationDot } from 'react-icons/fa6';
 
 interface FormData {
   name: string;
@@ -54,57 +57,108 @@ const Contact = () => {
     <section id="contact" className="py-20">
       <Toaster position="top-right" />
       <div className="max-w-6xl mx-auto px-4">
-        <motion.h2
-          className="text-3xl font-bold text-center mb-12"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
-          Get In Touch
-        </motion.h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+        <div className="mb-16">
+          <motion.h2
+            className="text-4xl font-bold mb-4"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
           >
-            <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
-            <div className="space-y-4">
-              <motion.div
-                className="flex items-center"
-                whileHover={{ x: 5 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <Mail className="w-6 h-6 text-blue-600 mr-4" />
-                <span>manishboge@gmail.com</span>
-              </motion.div>
-              <motion.div
-                className="flex items-center"
-                whileHover={{ x: 5 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <Phone className="w-6 h-6 text-blue-600 mr-4" />
-                <span>+91 (789) 318-2353</span>
-              </motion.div>
-              <motion.div
-                className="flex items-center"
-                whileHover={{ x: 5 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <MapPin className="w-6 h-6 text-blue-600 mr-4" />
-                <span>Hyderabad - India</span>
-              </motion.div>
-            </div>
-          </motion.div>
+            Get In Touch
+          </motion.h2>
+          <p className="text-gray-600 max-w-2xl">
+            Feel free to reach out to me through any of these platforms. I'm always open to discussing new projects, opportunities, or just having a chat.
+          </p>
+        </div>
+
+        {/* Contact Info Section */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-semibold mb-8">Contact Information</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 max-w-4xl">
+            {/* LinkedIn */}
+            <motion.a
+              href="https://linkedin.com/in/manish-boge-97b024129"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center text-center space-y-2 p-4 rounded-lg hover:bg-gray-50"
+              whileHover={{ y: -5 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                <FaLinkedin className="w-6 h-6 text-blue-600" />
+              </div>
+              <h4 className="font-semibold">Linkedin</h4>
+              <p className="text-gray-600 text-sm">Manish Boge</p>
+            </motion.a>
+
+            {/* Email */}
+            <motion.a
+              href="mailto:my1000088@gmail.com"
+              className="flex flex-col items-center text-center space-y-2 p-4 rounded-lg hover:bg-gray-50"
+              whileHover={{ y: -5 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                <MdEmail className="w-6 h-6 text-blue-600" />
+              </div>
+              <h4 className="font-semibold">Email</h4>
+              <p className="text-gray-600 text-sm">manishboge@gmail.com</p>
+            </motion.a>
+
+            {/* GitHub */}
+            <motion.a
+              href="https://github.com/Manishh09"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center text-center space-y-2 p-4 rounded-lg hover:bg-gray-50"
+              whileHover={{ y: -5 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                <FaGithub className="w-6 h-6 text-blue-600" />
+              </div>
+              <h4 className="font-semibold">GitHub</h4>
+              <p className="text-gray-600 text-sm">Manish</p>
+            </motion.a>
+
+            {/* Mobile */}
+            <motion.div
+              className="flex flex-col items-center text-center space-y-2 p-4 rounded-lg hover:bg-gray-50"
+              whileHover={{ y: -5 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                <FaMobile className="w-6 h-6 text-blue-600" />
+              </div>
+              <h4 className="font-semibold">Mobile</h4>
+              <p className="text-gray-600 text-sm">+91-7893182353</p>
+            </motion.div>
+
+            {/* Location */}
+            <motion.div
+              className="flex flex-col items-center text-center space-y-2 p-4 rounded-lg hover:bg-gray-50"
+              whileHover={{ y: -5 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                <FaLocationDot className="w-6 h-6 text-blue-600" />
+              </div>
+              <h4 className="font-semibold">Location</h4>
+              <p className="text-gray-600 text-sm">Hyderabad, Telangana, India</p>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* Contact Form Section */}
+        <div className="max-w-2xl ">
+          <h3 className="text-2xl font-semibold mb-8">Send Me a Message</h3>
           <motion.form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="space-y-4"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            className="space-y-6"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
           >
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
