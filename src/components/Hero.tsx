@@ -1,6 +1,7 @@
 // Desc: Hero component for the website. It contains the hero section with the profile image and the introduction.
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
   return (
@@ -23,21 +24,45 @@ const Hero = () => {
               </motion.span>
             </div>
             <motion.h1
-              className="text-6xl font-bold mb-4"
+              className="text-5xl font-bold mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
+              <span className='text-gray-700'>Hi, I'm{' '}</span>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-500 to-indigo-600">
-                Hi, I'm Manish Boge
+                {' '}
+                <TypeAnimation
+                  sequence={[
+                    'Manish Boge',
+                    1500,
+                    'Manish Boge',
+                    1500,
+                  ]}
+                  wrapper="span"
+                  speed={25}
+                  repeat={Infinity}
+                />
               </span>
               <motion.div
-                className="mt-2 text-4xl text-gray-900"
+                className="mt-2 text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-900 via-purple-600 to-purple-800"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
               >
-                Angular Developer
+               <span className='text-gray-700'> I'm an {' '}</span>
+                <TypeAnimation
+                  sequence={[
+                    
+                    'Angular Developer',
+                    1500,
+                    'Angular Developer',
+                    1500,
+                  ]}
+                  wrapper="span"
+                  speed={25}
+                  repeat={Infinity}
+                />
               </motion.div>
             </motion.h1>
             <motion.p
@@ -92,9 +117,10 @@ const Hero = () => {
               }}
             />
             <motion.img
-              src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=600&h=600"
+              
+              src="src/assets/images/Manish_Boge.jpg"
               alt="Profile"
-              className="rounded-full w-96 h-96 object-cover mx-auto shadow-2xl relative"
+              className="rounded-full w-96 h-96 object-fit mx-auto shadow-2xl relative"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             />
