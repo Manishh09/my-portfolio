@@ -49,12 +49,10 @@ const tutorials = [
       "toSignal",
       "toObservable",
       "linkedSignal API",
-      "resource API"
-      
+      "resource API",
     ],
     repo: "https://github.com/Manishh09/learning-angular-signals",
     icon: <SiAngular className="text-purple-500 text-3xl" />,
-
   },
   {
     title: "Getting Started with Cypress",
@@ -103,8 +101,11 @@ const TutorialList = () => {
 
   return (
     <AnimatePresence>
-      <section id="tutorials" className="py-16 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto p-2">
+      <section
+        id="tutorials"
+        className="mx-auto px-4 py-12 sm:py-20 sm:px-4 lg:px-14 max-w-7xl bg-gray-50"
+      >
+        <div className="mx-auto sm:px-6">
           <motion.h2
             className="text-3xl font-bold  mb-12"
             initial={{ opacity: 0, y: -20 }}
@@ -113,30 +114,32 @@ const TutorialList = () => {
           >
             Learn with Me
           </motion.h2>
+          <div className="">
+            <motion.div
+              className="grid gap-8 md:grid-cols-2"
+              variants={containerVariants}
+              initial="hidden"
+              animate="visible"
+            >
+              {tutorials.map((tutorial, index) => (
+                <motion.div
+                  key={index}
+                  variants={itemVariants}
+                  className="bg-white rounded-lg overflow-hidden shadow-lg"
+                  whileHover={{ y: -5 }}
 
-          <motion.div
-            className="grid gap-8 md:grid-cols-2"
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            {tutorials.map((tutorial, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                className="bg-white rounded-lg overflow-hidden shadow-lg"
-                whileHover={{ y: -5 }}
-
-                // onClick={() => setSelectedProject(tutorial)}
-              >
-                <div className="flex items-center gap-4 p-6">
-                  <div className="flex-shrink-0">{tutorial.icon}</div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">{tutorial.title}</h3>
-                    <p className="text-gray-600">{tutorial.description}</p>
+                  // onClick={() => setSelectedProject(tutorial)}
+                >
+                  <div className="flex items-center gap-4 p-6">
+                    <div className="flex-shrink-0">{tutorial.icon}</div>
+                    <div>
+                      <h3 className="text-xl font-bold mb-2">
+                        {tutorial.title}
+                      </h3>
+                      <p className="text-gray-600">{tutorial.description}</p>
+                    </div>
                   </div>
-                </div>
-                {/* <div className="flex flex-wrap gap-2 mb-4 flex-col">
+                  {/* <div className="flex flex-wrap gap-2 mb-4 flex-col">
                   {tutorial.features.map((feature, index) => (
                     <span
                       key={index}
@@ -147,18 +150,19 @@ const TutorialList = () => {
                     
                   ))}
                 </div> */}
-                <a
-                  href={tutorial.repo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-1 mb-4 ml-8 flex items-center gap-4 text-blue-500 font-medium  "
-                >
-                  <FaGithub className="text-lg text-gray-500"  />
-                  View on GitHub
-                </a>
-              </motion.div>
-            ))}
-          </motion.div>
+                  <a
+                    href={tutorial.repo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 mb-4 ml-8 flex items-center gap-4 text-blue-500 font-medium  "
+                  >
+                    <FaGithub className="text-lg text-gray-500" />
+                    View on GitHub
+                  </a>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
           {/* Modal */}
           {/* <TutorialCard 
         tutorial={selectedTutorial} 

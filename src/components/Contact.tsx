@@ -54,9 +54,9 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-4">
+    <section id="contact" className="mx-auto px-4 py-12 sm:py-20 sm:px-2 lg:px-14 max-w-7xl bg-gray-50">
       <Toaster position="top-right" />
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="mx-auto lg:px-8">
         <div className="mb-16">
           <motion.h2
             className="text-4xl font-bold mb-4"
@@ -80,7 +80,7 @@ const Contact = () => {
               href="https://linkedin.com/in/manish-boge-97b024129"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center text-center space-y-2 p-4 rounded-lg hover:bg-gray-50"
+              className="flex flex-col items-center text-center space-y-2 p-4 rounded-lg hover:bg-gray-100"
               whileHover={{ y: -5 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
@@ -94,7 +94,7 @@ const Contact = () => {
             {/* Email */}
             <motion.a
               href="mailto:my1000088@gmail.com"
-              className="flex flex-col items-center text-center space-y-2 p-4 rounded-lg hover:bg-gray-50"
+              className="flex flex-col items-center text-center space-y-2 p-4 rounded-lg hover:bg-gray-100"
               whileHover={{ y: -5 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
@@ -110,7 +110,7 @@ const Contact = () => {
               href="https://github.com/Manishh09"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center text-center space-y-2 p-4 rounded-lg hover:bg-gray-50"
+              className="flex flex-col items-center text-center space-y-2 p-4 rounded-lg hover:bg-gray-100"
               whileHover={{ y: -5 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
@@ -123,7 +123,7 @@ const Contact = () => {
 
             {/* Mobile */}
             <motion.div
-              className="flex flex-col items-center text-center space-y-2 p-4 rounded-lg hover:bg-gray-50"
+              className="flex flex-col items-center text-center space-y-2 p-4 rounded-lg hover:bg-gray-100"
               whileHover={{ y: -5 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
@@ -136,7 +136,7 @@ const Contact = () => {
 
             {/* Location */}
             <motion.div
-              className="flex flex-col items-center text-center space-y-2 p-4 rounded-lg hover:bg-gray-50"
+              className="flex flex-col items-center text-center cursor-pointer space-y-2 p-4 rounded-lg hover:bg-gray-100"
               whileHover={{ y: -5 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
