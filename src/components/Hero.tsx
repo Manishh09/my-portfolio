@@ -118,7 +118,7 @@ const Hero = () => {
             />
             <motion.img
               
-              src="src/assets/images/Manish_Boge.jpg"
+              src="src/assets/images/profile-pic.png"
               alt="Profile"
               className="rounded-full w-96 h-96 object-fit mx-auto shadow-2xl relative"
               whileHover={{ scale: 1.05 }}

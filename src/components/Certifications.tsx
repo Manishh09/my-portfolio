@@ -36,13 +36,13 @@ const certifications = [
 
 const Certifications = () => {
     return (
-        <div className="container mx-auto px-4 py-8 sm:py-12">
+        <div className="certifications mx-auto px-4 py-12 sm:py-20 lg:px-8 max-w-7xl">
             <div className="flex flex-row  justify-start items-center gap-2 sm:gap-4 sm:ml-0 md:ml-0 lg:ml-12 lg:mr-12">
                 <FaAward className="w-6 h-6 sm:w-8 sm:h-8 text-indigo-600" aria-hidden="true" />
                 <h2 className="text-2xl sm:text-3xl font-bold text-center">Certifications</h2>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 sm:p-8 lg:p-12 bg-gray-50 rounded-lg">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 sm:py-12 lg:p-12 bg-gray-50 rounded-lg md:py-20">
                 {certifications.map((cert, index) => (
                     <motion.div
                         key={index}
